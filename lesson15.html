@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>15</title>
+</head>
+<body>
+	<script>
+		var students = ['БСтудент 1','АСтудент 2','ГСтудент 3','ААСтудент 4','Студент 5'];
+		var students2 = ['Студент 6','Студент 7','Студент 8','Студент 9','Студент 10'];
+		document.write(students+"<br>");
+		document.write(students.reverse()+"<br>");//метод reverse переворачивает массив
+		document.write(students.sort()+"<br>");//сортирует массив по алфавиту
+		document.write(students.join(" ||| ")+"<br>");//указывает разделитель для элементов массива в скобках
+		var total = students.concat(students2);//метод соединяет правильно массивы, плюс не сработает
+		document.write(total+"<br>");
+		var students3 = ['Студент 1','Студент 2','Студент 3','Студент 4','Студент 5'];
+		document.write(students3+"<br>");
+		var happy = students3.slice(0,2);//выбирает н количество элементов
+		// начальный элемент и до какого не включительно включительно нужно брать
+		document.write(happy);
+	</script>
+</body>
+</html>

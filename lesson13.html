@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>13</title>
+</head>
+<body>
+	<script>
+		var countryes = ['Россия','Украина','Монголия','Казахстан','Белоруссия']
+		var count = countryes.length; //свойство length показывает длинну массива
+		document.write(count+"<br>");
+
+		var students = ['Студент 1','Студент 2','Студент 3','Студент 4'];
+		document.write(students.length+"<br>");
+		students.push('Студент 5');//метод push добавляет элемент в конец массива
+		document.write(students.length+"<br>");
+		document.write(students[4]+"<br>");
+		students.unshift('Студент 0');//метод unshift добавляет элемент в начало массива
+		document.write(students.length+"<br>");
+		document.write(students[0]+"<br>");
+		//удаление
+		students.pop();//удаляет последний элемент массива
+		document.write(students[students.length-1]+"<br>");//вывод последнего из массива длинна минус 1 потому что с нуля отсчет
+		students.shift(); //удаляет первый элемент из массива
+		document.write(students[0]+"<br>");
+	</script>
+</body>
+</html>

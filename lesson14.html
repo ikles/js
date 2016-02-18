@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>14</title>
+</head>
+<body>
+	<script>
+		var students = ['Студент 1','Студент 2','Студент 3','Студент 4','Студент 5'];
+		document.write(students+"<br>");
+		students.splice(3,2);//метод splice удаляет элементы
+		//первый с какого начинать удалять,второй сколько удалять
+		document.write(students+"<br>");
+		//document.write(students[0]+"<br>");
+		students.splice(2,0,'Студент 6', 'Студент 7');//0 говорит что удалять не надо, дальше перед элементом 2 кого добавлять указываем
+		document.write(students+"<br>");
+		students.splice(1,2,'Студент 8', 'Студент 9');//удаляет двоих начиная с первого и на их место ставит новых
+		document.write(students+"<br>");
+	</script>
+</body>
+</html>
